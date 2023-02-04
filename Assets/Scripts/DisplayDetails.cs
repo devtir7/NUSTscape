@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using TMPro;
 
@@ -8,16 +9,18 @@ public class DisplayDetails : MonoBehaviour
     private GameObject _title;
     private GameObject _description;
 
-    private void Start()
+    private void Awake()
     {
         _panel = GameObject.FindGameObjectWithTag("panel");
         _title = GameObject.FindWithTag("title");
         _description = GameObject.FindWithTag("description");
-        gameObject.GetComponent<SpriteRenderer>().sprite = department.icon;
-        
-        _panel.SetActive(false);
     }
 
+    private void Start()
+    {
+        //gameObject.GetComponent<SpriteRenderer>().sprite = department.icon;
+        _panel.SetActive(false);
+    }
     private void OnMouseDown()
     {
         // Debug.Log(GameObject.FindWithTag("panel"));
@@ -32,7 +35,7 @@ public class DisplayDetails : MonoBehaviour
 
         _title.GetComponent<TextMeshProUGUI>().text = department.title;
         _description.GetComponent<TextMeshProUGUI>().text = department.description;
-        
+
         _panel.SetActive(true);
     }
 }
