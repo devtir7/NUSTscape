@@ -5,5 +5,4 @@ public class Department : ScriptableObject
 {
     public string title;
     public string description;
-    //public Sprite icon;
 }

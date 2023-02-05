@@ -4,42 +4,57 @@ using UnityEngine;
 
 public class MoveCamera : MonoBehaviour
 {
-    private Vector3 Origin;
-    private Vector3 Difference;
-    private Vector3 ResetCamera;
+    private Vector3 _origin;
+    private Vector3 _difference;
+    private Vector3 _originalPosition;
+    private bool _drag = false;
+    private Camera _camera;
 
-    private bool drag = false;
     private void Start()
     {
-        ResetCamera = Camera.main.transform.position;
+        _camera = GetComponent<Camera>();
+        _originalPosition = _camera.transform.position;
     }
 
     private void LateUpdate()
     {
         if (Input.GetMouseButton(0))
         {
-            Difference = (Camera.main.ScreenToWorldPoint(Input.mousePosition)) - Camera.main.transform.position;
+            _difference = _camera.ScreenToWorldPoint(new Vector3(Input.mousePosition.x,
+                Input.mousePosition.y, _camera.transform.position.z)) - _camera.transform.position;
 
-            if (!drag)
+            if (!_drag)
             {
-                drag = true;
-                Origin = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                _drag = true;
+                _origin = _camera.ScreenToWorldPoint(new Vector3(Input.mousePosition.x,
+                    Input.mousePosition.y, _camera.transform.position.z));
             }
         }
 
         else
         {
-            drag = false;
+            _drag = false;
         }
 
-        if (drag)
+        if (_drag)
         {
-            Camera.main.transform.position = Origin - Difference;
+            Debug.Log(_difference);
+            Debug.Log(_origin);
+            _camera.transform.position = _origin - _difference;
         }
 
         if (Input.GetMouseButton(1))
         {
-            Camera.main.transform.position = ResetCamera;
+            _camera.transform.position = _originalPosition;
         }
+    }
+
+    public Vector3 GetWorldPositionOnPlane(Vector3 screenPosition, float z)
+    {
+        Ray ray = Camera.main.ScreenPointToRay(screenPosition);
+        Plane xy = new Plane(Vector3.forward, new Vector3(0, 0, z));
+        float distance;
+        xy.Raycast(ray, out distance);
+        return ray.GetPoint(distance);
     }
 }

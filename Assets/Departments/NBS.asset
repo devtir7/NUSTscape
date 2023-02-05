@@ -12,6 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e52dfdfd04b172447858cf1e8896f4cd, type: 3}
   m_Name: NBS
   m_EditorClassIdentifier: 
-  title: 
-  description: 
+  title: NBS
+  description: NBS stands for NUST Business School. It is a type of business school
+    that provides undergraduate, graduate and postgraduate education in business
+    and management. NBS focuses on developing students' skills and knowledge in areas
+    such as finance, marketing, human resources, and entrepreneurship. The curriculum
+    is designed to give students a well-rounded education in business, preparing
+    them for successful careers in various industries. NBS programs often feature
+    hands-on learning experiences, such as internships and case studies, to help
+    students apply what they have learned in real-world settings.
   icon: {fileID: 0}
