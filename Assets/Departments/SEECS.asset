@@ -13,5 +13,10 @@ MonoBehaviour:
   m_Name: SEECS
   m_EditorClassIdentifier: 
   title: SEECS
-  description: Hell
-  icon: {fileID: 21300000, guid: e92527f6d0fe45342ab542b47346d45f, type: 3}
+  description: SEECS stands for School of Electrical Engineering and Computer Science.
+    It is a faculty of engineering and computer science that offers academic programs
+    and research opportunities in various fields such as computer science, software
+    engineering, electrical engineering, and information technology. SEECS typically
+    provides students with a strong foundation in both theoretical and practical
+    aspects of engineering and computer science, preparing them for careers in these
+    fields.

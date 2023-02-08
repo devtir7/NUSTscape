@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 375d6f73abe3c4c69890a2f0d2ef06b3
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 300
+  forceTextureCase: -1
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Gibson
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 81a87d03b32034aa38197f18677dd078, type: 3}
+  - {fileID: 12800000, guid: 2141355d0ca0941d6a009cf4b5030126, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
