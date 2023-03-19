@@ -38,8 +38,6 @@ public class MoveCamera : MonoBehaviour
 
         if (_drag)
         {
-            Debug.Log(_difference);
-            Debug.Log(_origin);
             _camera.transform.position = _origin - _difference;
         }
 
