@@ -1,22 +1,165 @@
 {
-  "departmentTraversals":[
+  "departmentTraversals": [
     {
       "department": "SEECS",
-      "traversals":[
+      "traversals": [
         {
-          "position":"floor_one_left_hall_entrance",
-          "forward":"floor_one_left_hall_middle"
+          "position": "parking_entrance",
+          "forward": "parking_entrance_start"
         },
         {
-          "position":"floor_one_left_hall_middle",
+          "position": "parking_entrance_start",
+          "forward": "parking_entrance_middle",
+          "backward": "parking_entrance"
+        },
+        {
+          "position": "parking_entrance_middle",
+          "forward": "parking_entrance_forward_top_middle",
+          "backward": "parking_entrance_start"
+        },
+        {
+          "position": "parking_entrance_forward_top_middle",
+          "right": "parking_entrance_right",
+          "forward": "parking_entrance_forward_top_end",
+          "backward": "parking_entrance_middle"
+        },
+        {
+          "position": "parking_entrance_forward_top_end",
+          "forward": "seecs_open_center",
+          "backward": "parking_entrance_forward_top_middle"
+        },
+        {
+          "position": "seecs_open_center",
+          "right": "seecs_front_entrance",
+          "backward": "parking_entrance_forward_top_middle"
+        },
+        {
+          "position": "seecs_front_entrance",
+          "backward": "seecs_open_center",
+          "forward": "seecs_front_entrance_top"
+        },
+        {
+          "position": "seecs_front_entrance_top",
+          "forward": "seecs_center",
+          "backward": "seecs_front_entrance"
+        },
+        {
+          "position": "seecs_center",
+          "backward": "seecs_front_entrance_top",
+          "right": "left_staircase_bottom",
+          "left": "right_staircase_bottom"
+        },
+        {
+          "position": "right_staircase_bottom",
+          "right": "right_staircase_top",
+          "backward": "seecs_center",
+          "forward": "EE_corridor_start"
+        },
+        {
+          "position": "EE_corridor_start",
+          "forward": "EE_corridor_end",
+          "backward": "right_staircase_bottom"
+        },
+        {
+          "position": "EE_corridor_end",
+          "backward": "EE_corridor_start"
+        },
+        {
+          "position": "right_staircase_top",
+          "backward":"right_staircase_bottom",
+          "left": "top_right_balcony",
+          "right": "computer_corridor_start"
+        },
+        {
+          "position": "computer_corridor_start",
+          "forward": "computer_corridor_middle",
+          "backward": "right_staircase_top"
+        },
+        {
+          "position": "computer_corridor_middle",
+          "backward": "computer_corridor_start",
+          "right": "computer_hall_right_corridor",
+          "left": "computer_hall_left_corridor"
+        },
+        {
+          "position": "computer_hall_left_corridor",
+          "backward": "computer_hall_middle"
+        },
+        {
+          "position": "computer_hall_right_corridor",
+          "backward": "computer_hall_middle"
+        },
+        {
+          "position": "top_right_balcony",
+          "forward": "top_center",
+          "backward": "right_staircase_top"
+        },
+        {
+          "position": "top_center",
+          "right": "top_right_balcony",
+          "left": "top_left_balcony"
+        },
+        {
+          "position": "top_left_balcony",
+          "left": "left_staircase_top",
+          "forward": "floor_one_left_hall_entrance"
+        },
+        {
+          "position": "left_staircase_top",
+          "left": "floor_one_left_hall_entrance",
+          "right": "top_left_balcony",
+          "backward": "left_staircase_bottom"
+        },
+        {
+          "position":"left_staircase_bottom",
+          "left":"left_staircase_top",
+          "backward":"seecs_center",
+          "forward":"bottom_corridor_start"
+        },
+        {
+          "position":"bottom_corridor_start",
+          "backward":"left_staircase_bottom",
+          "forward":"bottom_corridor_middle"
+        },
+        {
+          "position":"bottom_corridor_middle",
+          "backward":"bottom_corridor_start",
+          "forward":"parking_entrance_right",
+          "right":"bottom_corridor_right",
+          "left":"bottom_corridor_left"
+        },
+        {
+          "position":"parking_entrance_right",
+          "forward":"bottom_corridor_middle",
+          "backward":"parking_entrance_forward_top_middle"
+        },
+        {
+          "position":"bottom_corridor_left",
+          "backward":"bottom_corridor_middle"
+        },
+        {
+          "position":"bottom_corridor_right",
+          "backward":"bottom_corridor_middle"
+        },
+        {
+          "position":"bottom_corridor_left",
+          "backward":"bottom_corridor_middle"
+        },
+        {
+          "position": "floor_one_left_hall_entrance",
+          "backward": "top_left_balcony",
+          "forward": "floor_one_left_hall_middle"
+        },
+        {
+          "position": "floor_one_left_hall_middle",
           "forward": "floor_one_left_hall_end",
-          "backward":"floor_one_left_hall_entrance",
+          "backward": "floor_one_left_hall_entrance",
           "left": "floor_one_left_hall_left_hallway",
           "right": "floor_one_left_hall_right_hallway"
         },
         {
-          "position":"floor_one_left_hall_end",
-          "backward":"floor_one_left_hall_middle",
+          "position": "floor_one_left_hall_end",
+          "backward": "floor_one_left_hall_middle",
           "left": "cr_12"
         },
         {
@@ -24,12 +167,12 @@
           "backward": "floor_one_left_hall_end"
         },
         {
-          "position":"floor_one_left_hall_left_hallway",
-          "backward":"floor_one_left_hall_middle"
+          "position": "floor_one_left_hall_left_hallway",
+          "backward": "floor_one_left_hall_middle"
         },
         {
-          "position":"floor_one_left_hall_right_hallway",
-          "backward":"floor_one_left_hall_middle"
+          "position": "floor_one_left_hall_right_hallway",
+          "backward": "floor_one_left_hall_middle"
         }
       ]
     }
