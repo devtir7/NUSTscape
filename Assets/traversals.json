@@ -72,22 +72,57 @@
         },
         {
           "position": "computer_corridor_start",
+          "left":"computing_lab_1",
+          "right":"computing_lab_3",
           "forward": "computer_corridor_middle",
           "backward": "right_staircase_top"
         },
         {
+          "position":"computing_lab_1",
+          "backward":"computer_corridor_start"
+        },
+        {
+          "position":"computing_lab_3",
+          "backward":"computer_corridor_start"
+        },
+        {
+          "position":"computing_lab_5",
+          "backward":"computer_hall_right_corridor"
+        },
+        {
+          "position":"computing_lab_4",
+          "backward":"computer_hall_right_corridor"
+        },
+        {
           "position": "computer_corridor_middle",
+          "forward":"computer_corridor_end",
           "backward": "computer_corridor_start",
           "right": "computer_hall_right_corridor",
           "left": "computer_hall_left_corridor"
         },
         {
+          "position":"computer_corridor_end",
+          "left":"computing_lab_2",
+          "right":"GPL",
+          "backward":"computer_corridor_middle"
+        },
+        {
+          "position":"computing_lab_2",
+          "backward":"computer_corridor_end"
+        },
+        {
+          "position":"GPL",
+          "backward":"computer_corridor_end"
+        },
+        {
           "position": "computer_hall_left_corridor",
-          "backward": "computer_hall_middle"
+          "backward": "computer_corridor_middle"
         },
         {
           "position": "computer_hall_right_corridor",
-          "backward": "computer_hall_middle"
+          "left":"computing_lab_5",
+          "right":"computing_lab_4",
+          "backward": "computer_corridor_middle"
         },
         {
           "position": "top_right_balcony",
