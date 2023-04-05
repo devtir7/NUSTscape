@@ -66,53 +66,53 @@
         },
         {
           "position": "right_staircase_top",
-          "backward":"right_staircase_bottom",
+          "backward": "right_staircase_bottom",
           "left": "top_right_balcony",
           "right": "computer_corridor_start"
         },
         {
           "position": "computer_corridor_start",
-          "left":"computing_lab_1",
-          "right":"computing_lab_3",
+          "left": "computing_lab_1",
+          "right": "computing_lab_3",
           "forward": "computer_corridor_middle",
           "backward": "right_staircase_top"
         },
         {
-          "position":"computing_lab_1",
-          "backward":"computer_corridor_start"
+          "position": "computing_lab_1",
+          "backward": "computer_corridor_start"
         },
         {
-          "position":"computing_lab_3",
-          "backward":"computer_corridor_start"
+          "position": "computing_lab_3",
+          "backward": "computer_corridor_start"
         },
         {
-          "position":"computing_lab_5",
-          "backward":"computer_hall_right_corridor"
+          "position": "computing_lab_5",
+          "backward": "computer_hall_right_corridor"
         },
         {
-          "position":"computing_lab_4",
-          "backward":"computer_hall_right_corridor"
+          "position": "computing_lab_4",
+          "backward": "computer_hall_right_corridor"
         },
         {
           "position": "computer_corridor_middle",
-          "forward":"computer_corridor_end",
+          "forward": "computer_corridor_end",
           "backward": "computer_corridor_start",
           "right": "computer_hall_right_corridor",
           "left": "computer_hall_left_corridor"
         },
         {
-          "position":"computer_corridor_end",
-          "left":"computing_lab_2",
-          "right":"GPL",
-          "backward":"computer_corridor_middle"
+          "position": "computer_corridor_end",
+          "left": "computing_lab_2",
+          "right": "GPL",
+          "backward": "computer_corridor_middle"
         },
         {
-          "position":"computing_lab_2",
-          "backward":"computer_corridor_end"
+          "position": "computing_lab_2",
+          "backward": "computer_corridor_end"
         },
         {
-          "position":"GPL",
-          "backward":"computer_corridor_end"
+          "position": "GPL",
+          "backward": "computer_corridor_end"
         },
         {
           "position": "computer_hall_left_corridor",
@@ -120,8 +120,8 @@
         },
         {
           "position": "computer_hall_right_corridor",
-          "left":"computing_lab_5",
-          "right":"computing_lab_4",
+          "left": "computing_lab_5",
+          "right": "computing_lab_4",
           "backward": "computer_corridor_middle"
         },
         {
@@ -146,39 +146,39 @@
           "backward": "left_staircase_bottom"
         },
         {
-          "position":"left_staircase_bottom",
-          "left":"left_staircase_top",
-          "backward":"seecs_center",
-          "forward":"bottom_corridor_start"
+          "position": "left_staircase_bottom",
+          "left": "left_staircase_top",
+          "backward": "seecs_center",
+          "forward": "bottom_corridor_start"
         },
         {
-          "position":"bottom_corridor_start",
-          "backward":"left_staircase_bottom",
-          "forward":"bottom_corridor_middle"
+          "position": "bottom_corridor_start",
+          "backward": "left_staircase_bottom",
+          "forward": "bottom_corridor_middle"
         },
         {
-          "position":"bottom_corridor_middle",
-          "backward":"bottom_corridor_start",
-          "forward":"parking_entrance_right",
-          "right":"bottom_corridor_right",
-          "left":"bottom_corridor_left"
+          "position": "bottom_corridor_middle",
+          "backward": "bottom_corridor_start",
+          "forward": "parking_entrance_right",
+          "right": "bottom_corridor_right",
+          "left": "bottom_corridor_left"
         },
         {
-          "position":"parking_entrance_right",
-          "forward":"bottom_corridor_middle",
-          "backward":"parking_entrance_forward_top_middle"
+          "position": "parking_entrance_right",
+          "forward": "bottom_corridor_middle",
+          "backward": "parking_entrance_forward_top_middle"
         },
         {
-          "position":"bottom_corridor_left",
-          "backward":"bottom_corridor_middle"
+          "position": "bottom_corridor_left",
+          "backward": "bottom_corridor_middle"
         },
         {
-          "position":"bottom_corridor_right",
-          "backward":"bottom_corridor_middle"
+          "position": "bottom_corridor_right",
+          "backward": "bottom_corridor_middle"
         },
         {
-          "position":"bottom_corridor_left",
-          "backward":"bottom_corridor_middle"
+          "position": "bottom_corridor_left",
+          "backward": "bottom_corridor_middle"
         },
         {
           "position": "floor_one_left_hall_entrance",
@@ -208,6 +208,361 @@
         {
           "position": "floor_one_left_hall_right_hallway",
           "backward": "floor_one_left_hall_middle"
+        }
+      ]
+    },
+    {
+      "department": "C2",
+      "traversals": [
+        {
+          "position": "entrance",
+          "forward": "entrance_middle"
+        },
+        {
+          "position": "entrance_middle",
+          "forward": "entrance_inner",
+          "backward": "entrance"
+        },
+        {
+          "position": "entrance_inner",
+          "backward": "entrance_middle",
+          "forward": "1"
+        },
+        {
+          "position": "1",
+          "left": "2",
+          "right": "10",
+          "backward": "entrance_inner"
+        },
+        {
+          "position": "2",
+          "left": "1",
+          "right": "3"
+        },
+        {
+          "position": "3",
+          "forward": "4",
+          "backward": "2"
+        },
+        {
+          "position": "4",
+          "left": "shop_corridor",
+          "forward": "5",
+          "backward": "3"
+        },
+        {
+          "position": "shop_corridor",
+          "right": "mart",
+          "backward": "4"
+        },
+        {
+          "position": "5",
+          "forward": "6",
+          "backward": "4"
+        },
+        {
+          "position": "6",
+          "forward": "7",
+          "backward": "5"
+        },
+        {
+          "position": "7",
+          "forward": "8",
+          "backward": "6"
+        },
+        {
+          "position": "8",
+          "forward": "9",
+          "backward": "7"
+        },
+        {
+          "position": "9",
+          "forward": "10",
+          "backward": "8"
+        },
+        {
+          "position": "10",
+          "forward": "2",
+          "left": "1",
+          "backward": "9"
+        }
+      ]
+    },
+    {
+      "department": "Library",
+      "traversals": [
+        {
+          "position": "entrance",
+          "forward": "entrance_middle"
+        },
+        {
+          "position": "entrance_middle",
+          "forward": "1",
+          "backward": "entrance",
+          "left": "statues"
+        },
+        {
+          "position": "statues",
+          "backward": "entrance_middle"
+        },
+        {
+          "position": "1",
+          "backward": "entrance_middle",
+          "left": "2"
+        },
+        {
+          "position": "2",
+          "forward": "3",
+          "backward": "1"
+        },
+        {
+          "position": "3",
+          "forward": "4",
+          "backward": "2"
+        },
+        {
+          "position": "4",
+          "forward": "5",
+          "backward": "3"
+        },
+        {
+          "position": "5",
+          "forward": "6",
+          "backward": "4"
+        },
+        {
+          "position": "6",
+          "forward": "7",
+          "left": "rooms",
+          "backward": "5"
+        },
+        {
+          "position": "rooms",
+          "right": "room",
+          "backward": "6"
+        },
+        {
+          "position": "room",
+          "backward": "rooms"
+        },
+        {
+          "position": "7",
+          "forward": "1",
+          "backward": "6"
+        }
+      ]
+    },
+    {
+      "department": "S3H",
+      "traversals": [
+        {
+          "position": "9",
+          "forward": "1"
+        },
+        {
+          "position": "1",
+          "backward": "9",
+          "forward": "2"
+        },
+        {
+          "position": "2",
+          "left": "10",
+          "right": "3",
+          "backward": "1",
+          "forward": "5"
+        },
+        {
+          "position": "10",
+          "backward": "2"
+        },
+        {
+          "position": "3",
+          "forward": "4",
+          "backward": "2"
+        },
+        {
+          "position": "4",
+          "backward": "3"
+        },
+        {
+          "position": "5",
+          "forward": "6",
+          "backward": "2"
+        },
+        {
+          "position": "6",
+          "left": "7",
+          "backward": "5"
+        },
+        {
+          "position": "7",
+          "forward": "8",
+          "backward": "6"
+        },
+        {
+          "position": "8",
+          "forward": "12",
+          "backward": "7",
+          "left": "11"
+        },
+        {
+          "position": "12",
+          "backward": "8"
+        },
+        {
+          "position": "11",
+          "backward": "8"
+        }
+      ]
+    },
+    {
+      "department": "Main Office",
+      "traversals": [
+        {
+          "position": "1",
+          "forward": "2"
+        },
+        {
+          "position": "2",
+          "forward": "5",
+          "left": "4",
+          "right": "3",
+          "backward": "1"
+        },
+        {
+          "position": "5",
+          "forward": "8",
+          "left": "7",
+          "right": "6",
+          "backward": "2"
+        },
+        {
+          "position": "8",
+          "left": "10",
+          "right": "9",
+          "backward": "5"
+        },
+        {
+          "position": "4",
+          "backward": "2"
+        },
+        {
+          "position": "3",
+          "backward": "2"
+        },
+        {
+          "position": "7",
+          "backward": "5"
+        },
+        {
+          "position": "6",
+          "backward": "5"
+        },
+        {
+          "position": "10",
+          "backward": "8"
+        },
+        {
+          "position": "9",
+          "backward": "8"
+        }
+      ]
+    },
+    {
+      "department": "NBS",
+      "traversals": [
+        {
+          "position": "1",
+          "forward": "2"
+        },
+        {
+          "position": "2",
+          "left": "3",
+          "backward": "1"
+        },
+        {
+          "position": "3",
+          "backward": "2",
+          "left": "5"
+        },
+        {
+          "position": "5",
+          "backward": "3",
+          "forward": "6"
+        },
+        {
+          "position": "6",
+          "left": "7",
+          "right": "12",
+          "backward": "5"
+        },
+        {
+          "position": "7",
+          "forward": "8",
+          "backward": "6"
+        },
+        {
+          "position": "8",
+          "left": "9",
+          "backward": "7"
+        },
+        {
+          "position": "9",
+          "left": "10",
+          "right": "11",
+          "backward": "8"
+        },
+        {
+          "position": "10",
+          "backward": "9"
+        },
+        {
+          "position": "11",
+          "backward": "9"
+        },
+        {
+          "position": "12",
+          "backward": "6",
+          "forward": "13"
+        },
+        {
+          "position": "13",
+          "forward": "18",
+          "left": "14",
+          "backward": "12"
+        },
+        {
+          "position": "14",
+          "backward": "13",
+          "forward": "15"
+        },
+        {
+          "position": "15",
+          "right": "16",
+          "left": "17",
+          "backward": "14"
+        },
+        {
+          "position": "16",
+          "backward": "15"
+        },
+        {
+          "position": "17",
+          "backward": "15"
+        },
+        {
+          "position": "18",
+          "left": "19",
+          "right": "20",
+          "backward": "13"
+        },
+        {
+          "position": "19",
+          "backward": "18"
+        },
+        {
+          "position": "20",
+          "backward": "18"
         }
       ]
     }

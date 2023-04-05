@@ -14,7 +14,7 @@ public class ImageTraversal : MonoBehaviour
     private Traversal _current;
 
     [SerializeField] private GameObject leftButton, rightButton, backwardButton, forwardButton;
-
+    [SerializeField] private String departmentName;
     public void moveTo(string position)
     {
         switch (position)
@@ -67,7 +67,7 @@ public class ImageTraversal : MonoBehaviour
     {
         _nust = JsonUtility.FromJson<NUST>(jsonFile.text);
         _image = GetComponent<Image>();
-        LoadInitial("SEECS");
+        LoadInitial(departmentName);
     }
 
     private void LoadInitial(string departmentName)
