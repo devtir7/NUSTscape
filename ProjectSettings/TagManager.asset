@@ -8,6 +8,10 @@ TagManager:
   - title
   - description
   - hamburger
+  - btn
+  - map
+  - traversal
+  - image
   layers:
   - Default
   - TransparentFX
