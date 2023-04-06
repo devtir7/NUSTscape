@@ -37,7 +37,7 @@ public class DisplayDetails : MonoBehaviour
         // Debug.Log(GameObject.FindWithTag("panel"));
         if (isOpen)
         {
-            animator.SetBool("show",false);
+            animator.SetBool("show", false);
             if (_title.GetComponent<TextMeshProUGUI>().text == department.title)
             {
                 return;
@@ -70,12 +70,12 @@ public class DisplayDetails : MonoBehaviour
     public void MouseEnter()
     {
         //Start scaling animation
-        GetComponent<Animator>().SetBool("scale",true);
+        GetComponent<Animator>().SetBool("scale", true);
     }
 
     public void MouseLeave()
     {
         //reverse scaling animation
-        GetComponent<Animator>().SetBool("scale",false);
+        GetComponent<Animator>().SetBool("scale", false);
     }
 }
