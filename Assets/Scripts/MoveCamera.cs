@@ -11,7 +11,7 @@ public class MoveCamera : MonoBehaviour
 
     private Camera _mainCamera;
 
-    private float _maxX = 10f, _maxY = 6.5f, _minX = -10f, _minY = -5.8f;
+    private float _maxX = 29.5f, _maxY = 17.3f, _minX = -29f, _minY = -16.5f;
     private bool _isDragging;
 
     private void Awake()
