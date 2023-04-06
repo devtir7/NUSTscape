@@ -36,7 +36,6 @@ public class ImageTraversal : MonoBehaviour
 
     private void FindAndSetNewTraversal(string positionName)
     {
-        Debug.Log(positionName);
         foreach (var dept in _departmentTraversals.traversals)
         {
             if (dept.position != positionName) continue;
@@ -67,11 +66,15 @@ public class ImageTraversal : MonoBehaviour
     {
         _nust = JsonUtility.FromJson<NUST>(jsonFile.text);
         _image = GetComponent<Image>();
-        LoadInitial(departmentName);
     }
 
-    private void LoadInitial(string departmentName)
+    public void LoadInitial(string departmentName)
     {
+        if (_nust == null)
+        {
+            _nust = JsonUtility.FromJson<NUST>(jsonFile.text);
+            _image = GetComponent<Image>();
+        }
         foreach (DepartmentTraversals dept in _nust.departmentTraversals)
         {
             if (dept.department != departmentName) continue;
