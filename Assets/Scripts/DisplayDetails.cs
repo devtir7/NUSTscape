@@ -22,7 +22,7 @@ public class DisplayDetails : MonoBehaviour
         _panel = GameObject.FindWithTag("panel");
         _title = GameObject.FindWithTag("title");
         _description = GameObject.FindWithTag("description");
-        _btn=GameObject.FindWithTag("btn");
+        _btn = GameObject.FindWithTag("btn");
     }
 
     private void Start()
@@ -46,6 +46,7 @@ public class DisplayDetails : MonoBehaviour
         PanCameraToDepartment();
         _title.GetComponent<TextMeshProUGUI>().text = department.title;
         _description.GetComponent<TextMeshProUGUI>().text = department.description;
+        //_image.GetComponent<Image>().sprite = department.picture;
         _btn.GetComponent<Button>().onClick.RemoveAllListeners();
         _btn.GetComponent<Button>().onClick.AddListener(OnClick);
         animator.SetBool("show", true);
@@ -59,11 +60,11 @@ public class DisplayDetails : MonoBehaviour
         Debug.Log(_image.name);
         _image.GetComponent<ImageTraversal>().LoadInitial(gameObject.name);
     }
-    
+
     private void PanCameraToDepartment()
     {
         Camera camera = Camera.main;
-        GameObject.FindWithTag("MainCamera").transform.position = new Vector3(transform.position.x ,transform.position.y,
+        GameObject.FindWithTag("MainCamera").transform.position = new Vector3(transform.position.x, transform.position.y,
             camera.transform.position.z);
         Debug.Log(camera.transform.position);
     }

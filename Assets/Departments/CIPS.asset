@@ -12,5 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e52dfdfd04b172447858cf1e8896f4cd, type: 3}
   m_Name: CIPS
   m_EditorClassIdentifier: 
-  title: 
-  description: 
+  title: Center for International Peace and Stability (CIPS)
+  description: CIPS is a renowned center of excellence in the field of peace and
+    security studies, and it is dedicated to promoting regional and international
+    stability and security.  CIPS aims to provide research-based solutions to various
+    security-related challenges that are facing Pakistan, the region, and the world.
+    The center achieves this by conducting cutting-edge research, providing training
+    and capacity-building programs, and organizing workshops and seminars on issues
+    related to peace and security.

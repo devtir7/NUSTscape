@@ -12,5 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e52dfdfd04b172447858cf1e8896f4cd, type: 3}
   m_Name: S3H
   m_EditorClassIdentifier: 
-  title: 
-  description: 
+  title: School of Social Sciences and Humanities (S3H)
+  description: S3H is an academic school at NUST, offering diverse undergraduate
+    and graduate programs in social sciences, psychology, economics, media studies,
+    and English literature. The faculty is highly qualified, experienced, and emphasizes
+    a student-centered approach to teaching. S3H is also involved in research projects
+    and collaborations with external organizations, providing students with opportunities
+    to gain practical experience. Overall, S3H is an excellent place for students
+    interested in exploring social sciences and humanities.

@@ -12,5 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e52dfdfd04b172447858cf1e8896f4cd, type: 3}
   m_Name: Old Gym
   m_EditorClassIdentifier: 
-  title: 
-  description: 
+  title: Old Gym
+  description: The old gym at NUST offers a decent gym equipped with the necessary
+    machinery to maintain a healthy lifestyle. Additionally, it also houses a tennis
+    court.

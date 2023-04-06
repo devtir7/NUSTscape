@@ -12,5 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e52dfdfd04b172447858cf1e8896f4cd, type: 3}
   m_Name: Main Office
   m_EditorClassIdentifier: 
-  title: 
-  description: 
+  title: Main Office
+  description: The NUST Main Office serves as the central point of contact for faculty,
+    staff, students, and visitors. It provides a range of administrative and support
+    services for the university's day-to-day operations, including academic affairs,
+    finance, human resources, and student services. The office houses various departments
+    and units, such as the registrar's office and admissions office, and is a one-stop-shop
+    for all administrative needs.

@@ -12,5 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e52dfdfd04b172447858cf1e8896f4cd, type: 3}
   m_Name: C2
   m_EditorClassIdentifier: 
-  title: 
-  description: 
+  title: Concordia-2 (C2)
+  description: Concordia-2 (C2) is a cozy and inviting cafe located near SEECS. The
+    cafe has a warm ambiance with comfortable seating and a welcoming atmosphere
+    that makes it a popular hangout spot for students and faculty alike. The menu
+    at C2 is diverse and offers a wide range of delicious food and beverage options.
+    The cafe serves up a variety of hot and cold drinks, including coffee, tea, juices,
+    and smoothies. The food menu features a selection of snacks, sandwiches, burgers,
+    and pizzas, as well as a variety of baked goods and desserts.
